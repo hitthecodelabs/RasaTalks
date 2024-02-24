@@ -9,7 +9,7 @@ This guide provides a detailed walkthrough for setting up and developing a Rasa 
 
 ## Step 2: Install Python
 
-- Ensure Python 3.7 or newer is installed on your system. Download it from https://www.python.org/.
+- Ensure Python 3.10 or newer is installed on your system. Download it from https://www.python.org/.
 
 ## Step 3: Install Rasa
 
@@ -18,17 +18,17 @@ This guide provides a detailed walkthrough for setting up and developing a Rasa 
 3. Navigate to your project directory in the terminal using the `cd` command.
 4. Create a Python virtual environment for your project:
    ```bash
-   python3 -m venv ./venv
+   python3 -m venv ./rasa_venv
    ```
    On Windows, you might use `python` instead of `python3`.
 5. Activate the virtual environment:
    - On Windows:
      ```
-     .\venv\Scripts\activate
+     .\rasa_venv\Scripts\activate
      ```
    - On macOS/Linux:
      ```
-     source venv/bin/activate
+     source rasa_venv/bin/activate
      ```
 6. Install Rasa within the virtual environment:
    ```bash
