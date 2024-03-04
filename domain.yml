@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - consulta_clima
+
+entities:
+  - ciudad
+  
+slots:
+  ciudad:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ciudad
+
+actions: 
+  - utter_saludo
+  - utter_despedida
+  - action_clima
+
+responses:
+  utter_saludo:
+  - text: "¡Hola!, ¿de qué ciudad te gustaría saber el clima?"
+  - text: "Mucho gusto, ¿para cuál ciudad deseas el pronóstico del clima?"
+  - text: "¿Sobre qué ciudad te gustaría conocer el clima?"
+  - text: "¿De qué ciudad necesitas el informe del clima?"
+  - text: "¡Hola! Dime una ciudad y te diré el clima."
+
+  utter_despedida:
+  - text: "Adiós"
+  - text: "Nos vemos pronto"
+  - text: "Hasta luego"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

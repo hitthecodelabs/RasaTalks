@@ -1,0 +1,12 @@
+version: "3.1"
+
+stories:
+- story: saludo, consulta de clima y despedida
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: consulta_clima
+  - action: action_clima
+  - intent: despedida
+  - action: utter_despedida
+

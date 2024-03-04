@@ -1,0 +1,51 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - hola hola
+    - qué tal
+    - hey
+    - buen día
+    - holaaa
+    
+- intent: despedida
+  examples: |
+    - adiós
+    - adios
+    - bye
+    - hasta luego
+    - gracias
+    - muchas gracias
+    - nos vemos
+    - buena noche
+    - chao
+    - hasta luego
+    - nos vemos después
+
+- intent: consulta_clima
+  examples: |
+    - ¿Cómo está el clima en [Quito](ciudad) hoy?
+    - Quiero saber el clima en [Cuenca](ciudad)
+    - ¿Cómo está el clima en [Quito](ciudad) hoy?
+    - clima en [Cuenca](ciudad)
+    - temperatura en [Manta](ciudad)
+    - temperatura en [Esmeraldas](ciudad)
+    - pronóstico en [Portoviejo](ciudad)
+    - ¿Qué tiempo hace en [Loja](ciudad)?
+    - cómo está el clima hoy en [Ambato](ciudad)
+    - ¿Cómo será el clima hoy en [Baños](ciudad)?
+    - La ciudad de [Quito](ciudad)
+    - De [Guayaquil](ciudad)
+    - De [Machala](ciudad)
+    - el clima en [Manta](ciudad)
+    - el clima en [Machala](ciudad)
+    - en [Cuenca](ciudad)
+    - quiero saber de [Portoviejo](ciudad)
+    - como está [Ambato](ciudad)
+    - qué clima hay en [Baños](ciudad)
+

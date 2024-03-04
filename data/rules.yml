@@ -1,0 +1,7 @@
+version: "3.1"
+
+rules:
+- rule: Acción consulta del clima
+  steps:
+  - intent: consulta_clima
+  - action: action_clima
